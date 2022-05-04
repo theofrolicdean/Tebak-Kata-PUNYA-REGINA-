@@ -23,6 +23,7 @@ KATA = [
     "beruang"
 ]
 main = True
+skor = 0
 
 while main:
     kata_tebakan = choice(KATA)
@@ -45,6 +46,7 @@ while main:
         print(f"Katanya adalah {kata_tebakan}")
     else:
         print("Selamat! Kamu berhasil tebak!")
+        skor += 1
 
     mainlagi = input("Main lagi? (ya/tidak): ").lower()
 
@@ -56,3 +58,4 @@ while main:
         print("Pilih yang benar sayang... :) lagi aja yuk")
 
 print("Terima kasih sudah bermain... EHEHHE")
+print(f"Total skormu: {skor}")
